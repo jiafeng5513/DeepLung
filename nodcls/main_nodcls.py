@@ -149,7 +149,7 @@ else:
     # net = DenseNet121()
     # net = ResNeXt29_2x64d()
     # net = MobileNet()
-    net = DPN92_3D()
+    net = dpn3d.DPN92_3D()
     # net = ShuffleNetG2()
 neptime = 2
 def get_lr(epoch):

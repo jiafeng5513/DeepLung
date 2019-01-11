@@ -244,7 +244,7 @@ for srsid, extant in lunadctclssgmdict.iteritems():
 	for subextant in extant:
 		writer.writerow(subextant)
 fid.close()
-discrete the generated csv
+# discrete the generated csv
 import pandas as pd 
 import csv
 srcname = 'annotationdetclssgm.csv'

@@ -14,7 +14,7 @@ Download LIDC-IDRI dataset from https://wiki.cancerimagingarchive.net/display/Pu
 
 #### Run:
 1. For preprocessing, run `./DeepLung/prepare.py`.
-2. The parameters for prepare.py is in config_training.py. 
+2. The parameters for `prepare.py` is in config_training.py. 
 3. `*_data_path` is the unzip raw data path for LUNA16.
 4. `*_preprocess_result_path` is the save path for the preprocessing.
 5. `*_annos_path` is the path for annotations. 
@@ -71,3 +71,9 @@ Doctor's annotation for each nodule in LIDC-IDRI is in ./nodcls/annotationdetcls
 1. Feel free to ask any questions. Wentao Zhu, wentaozhu1991@gmail.com
 2. LIDC-IDRI nodule size report downloaded from 
 http://www.via.cornell.edu/lidc/list3.2.csv is in /nodcls/data/list3.2.csv
+
+
+#### Note by jiafeng5513
+1. `./environment.md` is the environment settings.
+2. `frocwrtdetpepchluna16.py`中有一些变量没有初始化.
+3. 

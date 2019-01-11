@@ -447,19 +447,19 @@ def full_prep(train=True, val=True, test=True):
             print('starting val preprocessing')
             partial_savenpy = partial(savenpy, annos=valalllabel, filelist=valfilelist, data_path=val_data_path, prep_folder=val_prep_folder)
             N = len(valfilelist)
-                savenpy(1)
+            savenpy(1)
             _=pool.map(partial_savenpy, range(N))
             print('end val preprocessing')
         if test:
             print('starting test preprocessing')
             partial_savenpy = partial(savenpy, annos=testalllabel, filelist=testfilelist, data_path=test_data_path, prep_folder=test_prep_folder)
             N = len(testfilelist)
-                savenpy(1)
+            savenpy(1)
             _=pool.map(partial_savenpy, range(N))
             pool.close()
             pool.join()
             print('end test preprocessing')
-    f= open(finished_flag,"w+")        
+    f= open(finished_flag,"w+")
     
 def splitvaltestcsv():
     testfiles = []
