@@ -15,31 +15,48 @@ Download LIDC-IDRI dataset from https://wiki.cancerimagingarchive.net/display/Pu
 #### Run:
 1. For preprocessing, run `./DeepLung/prepare.py`.
 2. The parameters for `prepare.py` is in config_training.py. 
-3. `*_data_path` is the unzip raw data path for LUNA16.
-4. `*_preprocess_result_path` is the save path for the preprocessing.
-5. `*_annos_path` is the path for annotations. 
-6. `*_segment` is the path for LUNA16 segmentation, which can be downloaded from LUNA16 website.
-7. Use `run_training.sh` to train the detector. You can use the resnet or dual path net model by revising `--model` attribute. 
-8. After training and test are done, use the `./evaluationScript/frocwrtdetpepchluna16.py` to validate the epoch used for test. 
-9. After that, collect all the 10 folds' prediction, use `./evaluationScript/noduleCADEvaluationLUNA16.py` to get the FROC for all 10 folds. You can directly run `noduleCADEvaluationLUNA16.py`, and get the performance in the paper.
-10. The trained model is in `./detector/dpnmodel/` or `./detector/resmodel/`
-11. For nodule classification, first clean the data from LIDC-IDRI. Use the `./data/extclsshpinfo.py` to extract nodule labels. `humanperformance.py` is used to get the performance of doctors. 
-12. `dimcls.py` is used to get the classification based on diameter. 
-13. `nodclsgbt.py` is used to get the performance based on GBM, nodule diameter and nodule pixel.
-14. `pthumanperformance.py` is used for patient-level diagnosis performance. 
-15. `kappatest.py` is used for kappa value calculation in the paper.
-16. For classification using DPN, use the code in `main_nodcls.py`. 
-17. Use the `testdet2cls.py` to test the trained model. You may revise the code a little bit for different test settings.
-18. For system's classification, that is classification based on detection. 
+   1. `*_data_path` is the unzip raw data path for LUNA16.
+   2. `*_preprocess_result_path` is the save path for the preprocessing.
+   3. `*_annos_path` is the path for annotations. 
+   4. `*_segment` is the path for LUNA16 segmentation, which can be downloaded from LUNA16 website.
+3. Use `run_training.sh` to train the detector. You can use the resnet or dual path net model by revising `--model` attribute. 
+4. After training and test are done, use the `./evaluationScript/frocwrtdetpepchluna16.py` to validate the epoch used for test. 
+5. After that, collect all the 10 folds' prediction, use `./evaluationScript/noduleCADEvaluationLUNA16.py` to get the FROC for all 10 folds. You can directly run `noduleCADEvaluationLUNA16.py`, and get the performance in the paper.
+6.  The trained model is in `./detector/dpnmodel/` or `./detector/resmodel/`
+7.  For nodule classification, first clean the data from LIDC-IDRI. Use the `./data/extclsshpinfo.py` to extract nodule labels. `humanperformance.py` is used to get the performance of doctors. 
+8.  `dimcls.py` is used to get the classification based on diameter. 
+9.  `nodclsgbt.py` is used to get the performance based on GBM, nodule diameter and nodule pixel.
+10. `pthumanperformance.py` is used for patient-level diagnosis performance. 
+11. `kappatest.py` is used for kappa value calculation in the paper.
+12. For classification using DPN, use the code in `main_nodcls.py`. 
+13. Use the `testdet2cls.py` to test the trained model. You may revise the code a little bit for different test settings.
+14. For system's classification, that is classification based on detection. 
     1.  First, use the detection's test script in the `run_training.sh` to get the detected nodules for training CTs.
     2.  Use the `det2cls.py` to train the model. 
     3.  And use the `testdet2cls.py` to test the trained model. 
     4.  You may revise the code a little bit for different test settings.
 #### Files description:
-1. `config_training.py`中包含了训练所需的参数,主要是LUNA16数据集的路径.
-2. `prepare.py`是数据预处理脚本,预处理产生的数据也会存储在`config_training.py`中指定的文件夹中.
-3. `./detector/`文件夹中是检测器的相关代码,入口在`./detector/main.py`,可以通过`./run_training.sh`启动训练.
-4. ``
+1. `./DeepLungDetectionDemo/`文件夹中存储的是一个测试demo.
+2. `./detector/`文件夹中是检测器的相关代码,
+   1. 入口在`./detector/main.py`.
+   2. 可以通过`./run_training.sh`启动训练,`--model`参数用于选择resnet 和 dual path net
+   3. `./detector/dpnmodel/` 和 `./detector/resmodel/`中存储训练好的模型
+3. `./DOCs/`文件夹中存储文档,包含环境说明文档和论文.
+4. `./evaluationScripts/`文件夹中含有LUNA16提供的评估脚本,具体情况请看`./evaluationScripts/README.md`
+   1. 训练和测试结束后,`./evaluationScript/frocwrtdetpepchluna16.py`可以用来验证.
+   2. `./evaluationScript/noduleCADEvaluationLUNA16.py`用来生成论文中的一些图.
+5. `./nodcls/`文件夹中是分类器的相关代码.
+   1. clean the data from LIDC-IDRI.
+   2. Use the `./nodcls/data/extclsshpinfo.py` to extract nodule labels.
+   3. `./nodcls/data/dimcls.py` is used to get the classification based on diameter.
+   4. `./nodcls/data/nodclsgbt.py` is used to get the performance based on GBM, nodule diameter and nodule pixel.
+   5. `./nodcls/data/pthumanperformance.py` is used for patient-level diagnosis performance. 
+   6. `./nodcls/data/kappatest.py` is used for kappa value calculation in the paper.
+   7. For classification using DPN, use the code in `./nodcls/main_nodcls.py`. 
+   8. Use the `./nodcls/testdet2cls.py` to test the trained model. You may revise the code a little bit for different test settings.
+6. `./config_training.py`中包含了训练所需的参数,主要是LUNA16数据集的路径.
+7. `./prepare.py`是数据预处理脚本,预处理产生的数据也会存储在`./config_training.py`中指定的文件夹中.
+
 Doctor's annotation for each nodule in LIDC-IDRI is in ./nodcls/annotationdetclssgm_doctor.csv
 #### The performances on each fold are (these results are in the supplement)
 
