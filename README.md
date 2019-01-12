@@ -35,7 +35,11 @@ Download LIDC-IDRI dataset from https://wiki.cancerimagingarchive.net/display/Pu
     2.  Use the `det2cls.py` to train the model. 
     3.  And use the `testdet2cls.py` to test the trained model. 
     4.  You may revise the code a little bit for different test settings.
-
+#### Files description:
+1. `config_training.py`中包含了训练所需的参数,主要是LUNA16数据集的路径.
+2. `prepare.py`是数据预处理脚本,预处理产生的数据也会存储在`config_training.py`中指定的文件夹中.
+3. `./detector/`文件夹中是检测器的相关代码,入口在`./detector/main.py`,可以通过`./run_training.sh`启动训练.
+4. ``
 Doctor's annotation for each nodule in LIDC-IDRI is in ./nodcls/annotationdetclssgm_doctor.csv
 #### The performances on each fold are (these results are in the supplement)
 
@@ -74,6 +78,6 @@ http://www.via.cornell.edu/lidc/list3.2.csv is in /nodcls/data/list3.2.csv
 
 
 #### Note by jiafeng5513
-1. `./environment.md` is the environment settings.
+1. `./DOCs/environment.md` is the environment settings.
 2. `frocwrtdetpepchluna16.py`中有一些变量没有初始化.
 3. 
