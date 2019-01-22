@@ -211,7 +211,7 @@ def train(data_loader, net, loss, epoch, optimizer, get_lr, save_freq, save_dir)
         loss_output[0].backward()
         optimizer.step()
 
-        loss_output[0] = loss_output[0].data[0]
+        loss_output[0] = loss_output[0].item()
         metrics.append(loss_output)
 
     if epoch % args.save_freq == 0:            
@@ -259,7 +259,7 @@ def validate(data_loader, net, loss):
         output = net(data, coord)
         loss_output = loss(output, target, train = False)
 
-        loss_output[0] = loss_output[0].data[0]
+        loss_output[0] = loss_output[0].item()
         metrics.append(loss_output)    
     end_time = time.time()
 
