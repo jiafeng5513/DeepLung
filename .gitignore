@@ -101,5 +101,4 @@ ENV/
 .mypy_cache/
 workspace.xml
 *.pyc
-*.ckpt
 /detector/results
