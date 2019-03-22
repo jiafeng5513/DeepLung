@@ -83,6 +83,11 @@ class DPN(nn.Module):
         # self.num_blocks = num_blocks
         # self.dense_depth = dense_depth
 
+        # 'in_planes': (24,48,72,96),#(96,192,384,768),
+        # 'out_planes': (24,48,72,96),#(256,512,1024,2048),
+        # 'num_blocks': (2,2,2,2),
+        # 'dense_depth': (8,8,8,8)
+
         self.conv1 = nn.Conv3d(1, 24, kernel_size=3, stride=1, padding=1, bias=False)
         self.bn1 = nn.BatchNorm3d(24)
         self.last_planes = 24
@@ -111,6 +116,15 @@ class DPN(nn.Module):
                                     #nn.Dropout3d(p = 0.3),
                                    nn.Conv3d(64, 5 * len(config['anchors']), kernel_size = 1))
     def _make_layer(self, in_planes, out_planes, num_blocks, dense_depth, stride):
+        """
+        构造一个3D DPN 层
+        :param in_planes:
+        :param out_planes:
+        :param num_blocks:
+        :param dense_depth:
+        :param stride:
+        :return:
+        """
         strides = [stride] + [1]*(num_blocks-1)
         layers = []
         for i,stride in enumerate(strides):
