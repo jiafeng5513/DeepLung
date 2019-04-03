@@ -1,3 +1,4 @@
+#coding:utf-8
 '''Dual Path Networks in PyTorch.'''
 import torch
 import torch.nn as nn

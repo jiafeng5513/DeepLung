@@ -13,7 +13,7 @@
     把压缩包里面的文件复制到cuda安装目录的对应文件夹里面
 4. simpleitk 1.2.0
 5. pytorch 1.0.0
-6. torchvision 0.2.1
+6. torchvision 0.2.2
 7. pydicom 1.2.1
 8. mahotas 1.4.5
 9. nvidia-ml-py 375.53.1

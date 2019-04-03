@@ -44,7 +44,7 @@ while line:
 fid.close()
 # read luna16 annotation
 colname = ['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm']
-lunaantframe = pd.read_csv('annotations.csv', names=colname)
+lunaantframe = pd.read_csv('/home/RAID1/DataSet/LUNA16/CSVFILES/annotations.csv', names=colname)
 srslist = lunaantframe.seriesuid.tolist()[1:]
 cdxlist = lunaantframe.coordX.tolist()[1:]
 cdylist = lunaantframe.coordY.tolist()[1:]
@@ -57,38 +57,7 @@ for idx in xrange(len(srslist)):
 		lunaantdict[srslist[idx]].append(vlu)
 	else:
 		lunaantdict[srslist[idx]] = [vlu]
-# # convert luna16 annotation to LIDC-IDRI annotation space
-# from multiprocessing import Pool
-# lunantdictlidc = {}
-# for fold in xrange(10):
-# 	mhdpath = '/media/data1/wentao/tianchi/luna16/subset'+str(fold)
-# 	print 'fold', fold
-# 	def getvoxcrd(fname):
-# 		sliceim,origin,spacing,isflip = load_itk_image(os.path.join(mhdpath, fname))
-# 		lunantdictlidc[fname[:-4]] = []
-# 		voxcrdlist = []
-# 		for lunaant in lunaantdict[fname[:-4]]:
-# 			voxcrd = worldToVoxelCoord(lunaant[:3][::-1], origin, spacing)
-# 			voxcrd[-1] = sliceim.shape[0] - voxcrd[0]
-# 			voxcrdlist.append(voxcrd)
-# 		return voxcrdlist
-# 	p = Pool(30)
-# 	fnamelist = []
-# 	for fname in os.listdir(mhdpath):
-# 		if fname.endswith('.mhd') and fname[:-4] in lunaantdict:
-# 			fnamelist.append(fname)
-# 	voxcrdlist = p.map(getvoxcrd, fnamelist)
-# 	listidx = 0
-# 	for fname in os.listdir(mhdpath):
-# 		if fname.endswith('.mhd') and fname[:-4] in lunaantdict:
-# 			lunantdictlidc[fname[:-4]] = []
-# 			for subidx, lunaant in enumerate(lunaantdict[fname[:-4]]):
-# 				# voxcrd = worldToVoxelCoord(lunaant[:3][::-1], origin, spacing)
-# 				# voxcrd[-1] = sliceim.shape[0] - voxcrd[0]
-# 				lunantdictlidc[fname[:-4]].append([lunaant, voxcrdlist[listidx][subidx]])
-# 			listidx += 1
-# 	p.close()
-# np.save('lunaantdictlidc.npy', lunantdictlidc)
+
 # read LIDC dataset
 lunantdictlidc = np.load('lunaantdictlidc.npy').item()
 import xlrd
