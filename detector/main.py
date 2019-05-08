@@ -167,13 +167,11 @@ def main():
     for i, (data, target, coord) in enumerate(val_loader): # check data consistency
         if i >= len(valfilelist)/args.batch_size:
             break
-
     optimizer = torch.optim.SGD(
         net.parameters(),
         args.lr,
         momentum = 0.9,
         weight_decay = args.weight_decay)
-    
     def get_lr(epoch):
         if epoch <= args.epochs * 1/3: #0.5:
             lr = args.lr
@@ -192,12 +190,10 @@ def main():
 
 def train(data_loader, net, loss, epoch, optimizer, get_lr, save_freq, save_dir):
     start_time = time.time()
-    
     net.train()
     lr = get_lr(epoch)
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
-
     metrics = []
 
     for i, (data, target, coord) in enumerate(data_loader):
@@ -252,9 +248,10 @@ def validate(data_loader, net, loss):
 
     metrics = []
     for i, (data, target, coord) in enumerate(data_loader):
-        data = Variable(data.cuda(async = True), volatile = True)
-        target = Variable(target.cuda(async = True), volatile = True)
-        coord = Variable(coord.cuda(async = True), volatile = True)
+        with torch.no_grad():
+            data = Variable(data.cuda(async = True))
+            target = Variable(target.cuda(async = True))
+            coord = Variable(coord.cuda(async = True))
 
         output = net(data, coord)
         loss_output = loss(output, target, train = False)
