@@ -518,6 +518,6 @@ if __name__ == '__main__':
     annotations_filename = './annotations/annotations.csv'
     annotations_excluded_filename = './annotations/annotations_excluded.csv'
     seriesuids_filename = './annotations/seriesuids.csv'
-    results_filename = './annotations/3DRes18FasterR-CNN.csv'#3D Faster R-CNN - Res18.csv' #top5.csv'#
+    results_filename = './annotations/dpn26bs32.csv'#3D Faster R-CNN - Res18.csv' #top5.csv'#3DRes18FasterR-CNN.csv
     noduleCADEvaluation(annotations_filename,annotations_excluded_filename,seriesuids_filename,results_filename,'./')
     print "Finished!"
