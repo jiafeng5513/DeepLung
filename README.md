@@ -1,4 +1,8 @@
 # DeepLung:
+#### Start-up operation guide
+1. 下载数据集
+2. 运行`./prepare.py`
+3. 训练检测器.检测器在detector中
 #### Note
 Forked From [wentaozhu/DeepLung](https://github.com/wentaozhu/DeepLung) and edited by [jiafeng5513](https://github.com/jiafeng5513).
 

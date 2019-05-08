@@ -99,6 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
-workspace.xml
-*.pyc
 /detector/results
+*.ckpt
+.idea/inspectionProfiles/
+.idea/workspace.xml
