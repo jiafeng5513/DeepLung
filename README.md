@@ -2,7 +2,11 @@
 #### Start-up operation guide
 1. 下载数据集
 2. 运行`./prepare.py`
-3. 训练检测器.检测器在detector中,
+3. 训练检测器.检测器在detector中,通过运行`./run_trainging_detector.sh`开始训练<br>
+4. 测试检测器.通过运行`./run_test_detector.sh`进行
+5. 分类器需要的输入尺度和检测器不同,需要先进行数据准备,通过`./nodcls/Create_crop_v3.py`生成检测器的输入数据.<br>
+6. 训练分类器.分类器在nodcls中,通过运行`./run_training_classifier.sh`开始训练
+7. 
 #### Note
 Forked From [wentaozhu/DeepLung](https://github.com/wentaozhu/DeepLung) and edited by [jiafeng5513](https://github.com/jiafeng5513).
 
@@ -87,8 +91,3 @@ Doctor's annotation for each nodule in LIDC-IDRI is in ./nodcls/annotationdetcls
 2. LIDC-IDRI nodule size report downloaded from 
 http://www.via.cornell.edu/lidc/list3.2.csv is in /nodcls/data/list3.2.csv
 
-
-#### Note by jiafeng5513
-1. `./DOCs/environment.md` is the environment settings.
-2. `frocwrtdetpepchluna16.py`中有一些变量没有初始化.
-3. 
