@@ -16,22 +16,6 @@ from torch.autograd import Variable
 
 # npypath = '/media/data1/wentao/tianchi/luna16/cls/crop_v3/'
 class lunanod(data.Dataset):
-    """`CIFAR10 <https://www.cs.toronto.edu/~kriz/cifar.html>`_ Dataset.
-
-    Args:
-        root (string): Root directory of dataset where directory
-            ``cifar-10-batches-py`` exists.
-        train (bool, optional): If True, creates dataset from training set, otherwise
-            creates from test set.
-        transform (callable, optional): A function/transform that  takes in an PIL image
-            and returns a transformed version. E.g, ``transforms.RandomCrop``
-        target_transform (callable, optional): A function/transform that takes in the
-            target and transforms it.
-        download (bool, optional): If true, downloads the dataset from the internet and
-            puts it in root directory. If dataset is already downloaded, it is not
-            downloaded again.
-
-    """
     def __init__(self, npypath, fnamelst, labellst, featlst, train=True,
                  transform=None, target_transform=None,
                  download=False):
@@ -57,7 +41,8 @@ class lunanod(data.Dataset):
             self.test_data = []
             self.test_labels = []
             self.test_feat = featlst
-            for label, fentry in zip(labellst, fnamelst):
+            for label, fentry_f in zip(labellst, fnamelst):
+                fentry = np.load(os.path.join(npypath,fentry_f))
                 if fentry.shape[0] != 32 or fentry.shape[1] != 32 or fentry.shape[2] != 32:
                     print(fentry.shape, type(fentry), type(fentry)!='str')
                 if type(fentry) != 'str':

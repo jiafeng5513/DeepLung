@@ -1,0 +1,1424 @@
+INFO:root:mean 179.29755471522114 std 49.76069488655136
+INFO:root:==> Preparing data..
+INFO:root:==> Building model..
+INFO:root:
+Epoch: 0
+INFO:root:mean 179.29755471522114 std 49.76069488655136
+INFO:root:==> Preparing data..
+INFO:root:==> Building model..
+INFO:root:mean 179.29755471522114 std 49.76069488655136
+INFO:root:==> Preparing data..
+INFO:root:==> Building model..
+INFO:root:mean 179.29755471522114 std 49.76069488655136
+INFO:root:==> Preparing data..
+INFO:root:==> Building model..
+INFO:root:
+Epoch: 0
+INFO:root:mean 179.29755471522114 std 49.76069488655136
+INFO:root:==> Preparing data..
+INFO:root:==> Building model..
+INFO:root:
+Epoch: 0
+INFO:root:ep 0 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(59) bestacc tensor(59) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 1
+INFO:root:ep 1 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(48) bestacc tensor(48) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 2
+INFO:root:ep 2 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(45) bestacc tensor(45) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 3
+INFO:root:ep 3 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(46) bestacc tensor(46) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 4
+INFO:root:ep 4 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(59) bestacc tensor(59) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 5
+INFO:root:ep 5 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(66) bestacc tensor(66) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 6
+INFO:root:ep 6 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(51) bestacc tensor(51) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 7
+INFO:root:ep 7 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(50) bestacc tensor(50) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 8
+INFO:root:ep 8 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(59) bestacc tensor(59) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 9
+INFO:root:ep 9 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(54) bestacc tensor(54) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 10
+INFO:root:ep 10 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(60) bestacc tensor(60) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 11
+INFO:root:ep 11 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(56) bestacc tensor(56) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 12
+INFO:root:ep 12 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(61) bestacc tensor(61) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 13
+INFO:root:ep 13 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(66) bestacc tensor(66) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 14
+INFO:root:ep 14 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(64) bestacc tensor(64) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 15
+INFO:root:ep 15 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(59) bestacc tensor(59) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 16
+INFO:root:ep 16 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(71) bestacc tensor(71) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 17
+INFO:root:ep 17 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 18
+INFO:root:ep 18 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(71) bestacc tensor(71) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 19
+INFO:root:ep 19 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 20
+INFO:root:ep 20 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 21
+INFO:root:ep 21 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 22
+INFO:root:ep 22 tracc tensor(0) lr 0.1 gbtacc 0.8914473684210527
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(71) bestacc tensor(71) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 23
+INFO:root:ep 23 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 24
+INFO:root:ep 24 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(67) bestacc tensor(67) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 25
+INFO:root:ep 25 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 26
+INFO:root:ep 26 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 27
+INFO:root:ep 27 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 28
+INFO:root:ep 28 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(67) bestacc tensor(67) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 29
+INFO:root:ep 29 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 30
+INFO:root:ep 30 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 31
+INFO:root:ep 31 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 32
+INFO:root:ep 32 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 33
+INFO:root:ep 33 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 34
+INFO:root:ep 34 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 35
+INFO:root:ep 35 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 36
+INFO:root:ep 36 tracc tensor(0) lr 0.1 gbtacc 0.8914473684210527
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 37
+INFO:root:ep 37 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 38
+INFO:root:ep 38 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 39
+INFO:root:ep 39 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(72) bestacc tensor(72) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 40
+INFO:root:ep 40 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(69) bestacc tensor(69) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 41
+INFO:root:ep 41 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 42
+INFO:root:ep 42 tracc tensor(0) lr 0.1 gbtacc 0.8903508771929824
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 43
+INFO:root:ep 43 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 44
+INFO:root:ep 44 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 45
+INFO:root:ep 45 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 46
+INFO:root:ep 46 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 47
+INFO:root:ep 47 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(72) bestacc tensor(72) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 48
+INFO:root:ep 48 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 49
+INFO:root:ep 49 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 50
+INFO:root:ep 50 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 51
+INFO:root:ep 51 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(84) bestacc tensor(84) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 52
+INFO:root:ep 52 tracc tensor(0) lr 0.1 gbtacc 0.8914473684210527
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 53
+INFO:root:ep 53 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(85) bestacc tensor(85) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 54
+INFO:root:ep 54 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 55
+INFO:root:ep 55 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 56
+INFO:root:ep 56 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 57
+INFO:root:ep 57 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 58
+INFO:root:ep 58 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 59
+INFO:root:ep 59 tracc tensor(0) lr 0.1 gbtacc 0.8881578947368421
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(69) bestacc tensor(69) ccgbt 0.8695652173913043 bestgbt 0.8695652173913043
+INFO:root:
+Epoch: 60
+INFO:root:ep 60 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 61
+INFO:root:ep 61 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 62
+INFO:root:ep 62 tracc tensor(0) lr 0.1 gbtacc 0.8914473684210527
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 63
+INFO:root:ep 63 tracc tensor(0) lr 0.1 gbtacc 0.9035087719298246
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 64
+INFO:root:ep 64 tracc tensor(0) lr 0.1 gbtacc 0.8914473684210527
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 65
+INFO:root:ep 65 tracc tensor(0) lr 0.1 gbtacc 0.8914473684210527
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 66
+INFO:root:ep 66 tracc tensor(0) lr 0.1 gbtacc 0.8903508771929824
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 67
+INFO:root:ep 67 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8695652173913043 bestgbt 0.8695652173913043
+INFO:root:
+Epoch: 68
+INFO:root:ep 68 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.8695652173913043 bestgbt 0.8695652173913043
+INFO:root:
+Epoch: 69
+INFO:root:ep 69 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 70
+INFO:root:ep 70 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 71
+INFO:root:ep 71 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 72
+INFO:root:ep 72 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 73
+INFO:root:ep 73 tracc tensor(0) lr 0.1 gbtacc 0.8903508771929824
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(85) bestacc tensor(85) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 74
+INFO:root:ep 74 tracc tensor(0) lr 0.1 gbtacc 0.8914473684210527
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 75
+INFO:root:ep 75 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 76
+INFO:root:ep 76 tracc tensor(0) lr 0.1 gbtacc 0.8881578947368421
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(63) bestacc tensor(63) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 77
+INFO:root:ep 77 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(64) bestacc tensor(64) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 78
+INFO:root:ep 78 tracc tensor(0) lr 0.1 gbtacc 0.8892543859649122
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 79
+INFO:root:ep 79 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(84) bestacc tensor(84) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 80
+INFO:root:ep 80 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(88) bestacc tensor(88) ccgbt 0.8804347826086957 bestgbt 0.8804347826086957
+INFO:root:
+Epoch: 81
+INFO:root:ep 81 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 82
+INFO:root:ep 82 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(72) bestacc tensor(72) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 83
+INFO:root:ep 83 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 84
+INFO:root:ep 84 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 85
+INFO:root:ep 85 tracc tensor(0) lr 0.1 gbtacc 0.8892543859649122
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(65) bestacc tensor(65) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 86
+INFO:root:ep 86 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 87
+INFO:root:ep 87 tracc tensor(0) lr 0.1 gbtacc 0.9035087719298246
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 88
+INFO:root:ep 88 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 89
+INFO:root:ep 89 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(70) bestacc tensor(70) ccgbt 0.782608695652174 bestgbt 0.782608695652174
+INFO:root:
+Epoch: 90
+INFO:root:ep 90 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(84) bestacc tensor(84) ccgbt 0.8695652173913043 bestgbt 0.8695652173913043
+INFO:root:
+Epoch: 91
+INFO:root:ep 91 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 92
+INFO:root:ep 92 tracc tensor(0) lr 0.1 gbtacc 0.9046052631578947
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 93
+INFO:root:ep 93 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(70) bestacc tensor(70) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 94
+INFO:root:ep 94 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 95
+INFO:root:ep 95 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 96
+INFO:root:ep 96 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 97
+INFO:root:ep 97 tracc tensor(0) lr 0.1 gbtacc 0.9035087719298246
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 98
+INFO:root:ep 98 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 99
+INFO:root:ep 99 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 100
+INFO:root:ep 100 tracc tensor(0) lr 0.1 gbtacc 0.9046052631578947
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 101
+INFO:root:ep 101 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 102
+INFO:root:ep 102 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(69) bestacc tensor(69) ccgbt 0.8695652173913043 bestgbt 0.8695652173913043
+INFO:root:
+Epoch: 103
+INFO:root:ep 103 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(85) bestacc tensor(85) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 104
+INFO:root:ep 104 tracc tensor(0) lr 0.1 gbtacc 0.8914473684210527
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 105
+INFO:root:ep 105 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 106
+INFO:root:ep 106 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 107
+INFO:root:ep 107 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 108
+INFO:root:ep 108 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 109
+INFO:root:ep 109 tracc tensor(0) lr 0.1 gbtacc 0.8870614035087719
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 110
+INFO:root:ep 110 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 111
+INFO:root:ep 111 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(60) bestacc tensor(60) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 112
+INFO:root:ep 112 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 113
+INFO:root:ep 113 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 114
+INFO:root:ep 114 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.782608695652174 bestgbt 0.782608695652174
+INFO:root:
+Epoch: 115
+INFO:root:ep 115 tracc tensor(0) lr 0.1 gbtacc 0.9155701754385965
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.7717391304347826 bestgbt 0.7717391304347826
+INFO:root:
+Epoch: 116
+INFO:root:ep 116 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(84) bestacc tensor(84) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 117
+INFO:root:ep 117 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 118
+INFO:root:ep 118 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 119
+INFO:root:ep 119 tracc tensor(0) lr 0.1 gbtacc 0.9046052631578947
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 120
+INFO:root:ep 120 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(84) bestacc tensor(84) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 121
+INFO:root:ep 121 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 122
+INFO:root:ep 122 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 123
+INFO:root:ep 123 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 124
+INFO:root:ep 124 tracc tensor(0) lr 0.1 gbtacc 0.9057017543859649
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 125
+INFO:root:ep 125 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 126
+INFO:root:ep 126 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(72) bestacc tensor(72) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 127
+INFO:root:ep 127 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 128
+INFO:root:ep 128 tracc tensor(0) lr 0.1 gbtacc 0.9122807017543859
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(86) bestacc tensor(86) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 129
+INFO:root:ep 129 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(86) bestacc tensor(86) ccgbt 0.8913043478260869 bestgbt 0.8913043478260869
+INFO:root:
+Epoch: 130
+INFO:root:ep 130 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 131
+INFO:root:ep 131 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 132
+INFO:root:ep 132 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 133
+INFO:root:ep 133 tracc tensor(0) lr 0.1 gbtacc 0.893640350877193
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 134
+INFO:root:ep 134 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(66) bestacc tensor(66) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 135
+INFO:root:ep 135 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(69) bestacc tensor(69) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 136
+INFO:root:ep 136 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 137
+INFO:root:ep 137 tracc tensor(0) lr 0.1 gbtacc 0.9067982456140351
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 138
+INFO:root:ep 138 tracc tensor(0) lr 0.1 gbtacc 0.9133771929824561
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 139
+INFO:root:ep 139 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 140
+INFO:root:ep 140 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 141
+INFO:root:ep 141 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 142
+INFO:root:ep 142 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 143
+INFO:root:ep 143 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 144
+INFO:root:ep 144 tracc tensor(0) lr 0.1 gbtacc 0.9046052631578947
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8695652173913043 bestgbt 0.8695652173913043
+INFO:root:
+Epoch: 145
+INFO:root:ep 145 tracc tensor(0) lr 0.1 gbtacc 0.9046052631578947
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 146
+INFO:root:ep 146 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 147
+INFO:root:ep 147 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(67) bestacc tensor(67) ccgbt 0.7717391304347826 bestgbt 0.7717391304347826
+INFO:root:
+Epoch: 148
+INFO:root:ep 148 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 149
+INFO:root:ep 149 tracc tensor(0) lr 0.1 gbtacc 0.9035087719298246
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 150
+INFO:root:ep 150 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(84) bestacc tensor(84) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 151
+INFO:root:ep 151 tracc tensor(0) lr 0.1 gbtacc 0.9111842105263158
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 152
+INFO:root:ep 152 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 153
+INFO:root:ep 153 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 154
+INFO:root:ep 154 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 155
+INFO:root:ep 155 tracc tensor(0) lr 0.1 gbtacc 0.8958333333333334
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 156
+INFO:root:ep 156 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 157
+INFO:root:ep 157 tracc tensor(0) lr 0.1 gbtacc 0.9057017543859649
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 158
+INFO:root:ep 158 tracc tensor(0) lr 0.1 gbtacc 0.9046052631578947
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 159
+INFO:root:ep 159 tracc tensor(0) lr 0.1 gbtacc 0.9078947368421053
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 160
+INFO:root:ep 160 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 161
+INFO:root:ep 161 tracc tensor(0) lr 0.1 gbtacc 0.9067982456140351
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 162
+INFO:root:ep 162 tracc tensor(0) lr 0.1 gbtacc 0.9166666666666666
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 163
+INFO:root:ep 163 tracc tensor(0) lr 0.1 gbtacc 0.9089912280701754
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(78) bestacc tensor(78) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 164
+INFO:root:ep 164 tracc tensor(0) lr 0.1 gbtacc 0.9057017543859649
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 165
+INFO:root:ep 165 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(59) bestacc tensor(59) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 166
+INFO:root:ep 166 tracc tensor(0) lr 0.1 gbtacc 0.9078947368421053
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 167
+INFO:root:ep 167 tracc tensor(0) lr 0.1 gbtacc 0.9078947368421053
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 168
+INFO:root:ep 168 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(59) bestacc tensor(59) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 169
+INFO:root:ep 169 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8695652173913043 bestgbt 0.8695652173913043
+INFO:root:
+Epoch: 170
+INFO:root:ep 170 tracc tensor(0) lr 0.1 gbtacc 0.9111842105263158
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 171
+INFO:root:ep 171 tracc tensor(0) lr 0.1 gbtacc 0.9078947368421053
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(84) bestacc tensor(84) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 172
+INFO:root:ep 172 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 173
+INFO:root:ep 173 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(84) bestacc tensor(84) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 174
+INFO:root:ep 174 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 175
+INFO:root:ep 175 tracc tensor(0) lr 0.1 gbtacc 0.9133771929824561
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 176
+INFO:root:ep 176 tracc tensor(0) lr 0.1 gbtacc 0.9078947368421053
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 177
+INFO:root:ep 177 tracc tensor(0) lr 0.1 gbtacc 0.9057017543859649
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 178
+INFO:root:ep 178 tracc tensor(0) lr 0.1 gbtacc 0.9067982456140351
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 179
+INFO:root:ep 179 tracc tensor(0) lr 0.1 gbtacc 0.8991228070175439
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8695652173913043 bestgbt 0.8695652173913043
+INFO:root:
+Epoch: 180
+INFO:root:ep 180 tracc tensor(0) lr 0.1 gbtacc 0.9035087719298246
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 181
+INFO:root:ep 181 tracc tensor(0) lr 0.1 gbtacc 0.9057017543859649
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 182
+INFO:root:ep 182 tracc tensor(0) lr 0.1 gbtacc 0.9067982456140351
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 183
+INFO:root:ep 183 tracc tensor(0) lr 0.1 gbtacc 0.9046052631578947
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(73) bestacc tensor(73) ccgbt 0.782608695652174 bestgbt 0.782608695652174
+INFO:root:
+Epoch: 184
+INFO:root:ep 184 tracc tensor(0) lr 0.1 gbtacc 0.9035087719298246
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(75) bestacc tensor(75) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 185
+INFO:root:ep 185 tracc tensor(0) lr 0.1 gbtacc 0.9024122807017544
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 186
+INFO:root:ep 186 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 187
+INFO:root:ep 187 tracc tensor(0) lr 0.1 gbtacc 0.9002192982456141
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 188
+INFO:root:ep 188 tracc tensor(0) lr 0.1 gbtacc 0.8925438596491229
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(77) bestacc tensor(77) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 189
+INFO:root:ep 189 tracc tensor(0) lr 0.1 gbtacc 0.9035087719298246
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8369565217391305 bestgbt 0.8369565217391305
+INFO:root:
+Epoch: 190
+INFO:root:ep 190 tracc tensor(0) lr 0.1 gbtacc 0.8947368421052632
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(81) bestacc tensor(81) ccgbt 0.8586956521739131 bestgbt 0.8586956521739131
+INFO:root:
+Epoch: 191
+INFO:root:ep 191 tracc tensor(0) lr 0.1 gbtacc 0.9089912280701754
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 192
+INFO:root:ep 192 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(79) bestacc tensor(79) ccgbt 0.8260869565217391 bestgbt 0.8260869565217391
+INFO:root:
+Epoch: 193
+INFO:root:ep 193 tracc tensor(0) lr 0.1 gbtacc 0.9046052631578947
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(76) bestacc tensor(76) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 194
+INFO:root:ep 194 tracc tensor(0) lr 0.1 gbtacc 0.9013157894736842
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.7934782608695652 bestgbt 0.7934782608695652
+INFO:root:
+Epoch: 195
+INFO:root:ep 195 tracc tensor(0) lr 0.1 gbtacc 0.8969298245614035
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 196
+INFO:root:ep 196 tracc tensor(0) lr 0.1 gbtacc 0.9078947368421053
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(83) bestacc tensor(83) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:
+Epoch: 197
+INFO:root:ep 197 tracc tensor(0) lr 0.1 gbtacc 0.8980263157894737
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(80) bestacc tensor(80) ccgbt 0.8152173913043478 bestgbt 0.8152173913043478
+INFO:root:
+Epoch: 198
+INFO:root:ep 198 tracc tensor(0) lr 0.1 gbtacc 0.9144736842105263
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(85) bestacc tensor(85) ccgbt 0.8043478260869565 bestgbt 0.8043478260869565
+INFO:root:
+Epoch: 199
+INFO:root:ep 199 tracc tensor(0) lr 0.1 gbtacc 0.9035087719298246
+INFO:root:Saving gbt ..
+INFO:root:Saving..
+INFO:root:Saving..
+INFO:root:teacc tensor(82) bestacc tensor(82) ccgbt 0.8478260869565217 bestgbt 0.8478260869565217
+INFO:root:mean 179.29755471522114 std 49.76069488655136
+INFO:root:==> Preparing data..
+INFO:root:==> Building model..
+INFO:root:
+Epoch: 0

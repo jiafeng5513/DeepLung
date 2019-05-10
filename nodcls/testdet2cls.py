@@ -37,7 +37,7 @@ def nms(output, nms_th):
     return bboxes
 # find the mapping
 # load groundtruth
-antclscsv = pd.read_csv('/media/data1/wentao/tianchi/luna16/CSVFILES/annotationdetclsconvfnl_v3.csv', \
+antclscsv = pd.read_csv('./data/annotationdetclsconvfnl_v3.csv', \
     names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
 srslst = antclscsv['seriesuid'].tolist()[1:]
 cdxlst = antclscsv['coordX'].tolist()[1:]
