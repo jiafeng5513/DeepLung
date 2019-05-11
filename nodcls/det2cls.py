@@ -2,14 +2,23 @@ import numpy as np
 import pandas as pd
 import os
 import os.path
-fold = 4#1#4#3
+
+
+
+
+
+
+
+fold = 5#1#4#3
 resep = 143#21#17#39
 gbtdepth = 2#3#2#3
 neptime = 0.3
 testdetp = -2
 traindetp = -2
 start_epoch = 0  # start from epoch 0 or last checkpoint epoch
-resmodelpath = './detcls-'+str(fold)+'-old/ckptgbt.t7'
+
+resmodelpath = './checkpoint-'+str(fold)+'/ckptgbt.t7'
+v3csv = './data/annotationdetclsconvfnl_v3.csv'
 def iou(box0, box1):
     r0 = box0[3] / 2
     s0 = box0[:3] - r0
@@ -38,7 +47,7 @@ def nms(output, nms_th):
     return bboxes
 # find the mapping
 # load groundtruth
-antclscsv = pd.read_csv('./data/annotationdetclsconvfnl_v3.csv', \
+antclscsv = pd.read_csv(v3csv, \
     names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
 srslst = antclscsv['seriesuid'].tolist()[1:]
 cdxlst = antclscsv['coordX'].tolist()[1:]
@@ -357,7 +366,7 @@ testset = lunanod(preprocessallpath, tefnamelst, telabellst, tefeatlst, train=Fa
 testloader = torch.utils.data.DataLoader(testset, batch_size=16, shuffle=False, num_workers=30)
 checkpoint = torch.load(resmodelpath)#'./checkpoint-1-45/ckpt.t7')
 print(checkpoint.keys())
-net = DPN92_3D()
+net = dpn3d.DPN92_3D()
 net = checkpoint['net']
 # neptime = 0.2
 def get_lr(epoch):

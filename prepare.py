@@ -9,7 +9,19 @@ from skimage.morphology import convex_hull_image
 import pandas
 from multiprocessing import Pool
 from functools import partial
+import cv2
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import numpy as np
+import pydicom
+import pydicom as dicom
+from scipy import ndimage as ndi
+from skimage.filters import roberts
+from skimage.measure import label, regionprops
+from skimage.morphology import disk, binary_erosion, binary_closing
+from skimage.segmentation import clear_border
 
+zhfont = mpl.font_manager.FontProperties(fname='/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf')
 
 #重采样,调整像素间隔到一致
 def resample(imgs, spacing, new_spacing, order=2):
@@ -195,6 +207,7 @@ def savenpy_luna(id, annos, filelist, luna_segment, luna_data, savepath):
 
     print(name)
 
+
 def preprocess_luna():
     luna_segment = config['luna_segment']
     savepath = config['preprocess_result_path']
@@ -223,6 +236,131 @@ def preprocess_luna():
         pool.join()
     print('end preprocessing luna')
     f= open(finished_flag,"w+")
+
+
+def TestPreprocess(img,plot=False):
+    if plot == True:
+        f, plots = plt.subplots(2, 4)
+    '''
+    Step 1: 以604(HU=400)为分界点二值化
+    '''
+    binary = img < 604
+    if plot == True:
+        plt.subplot(2,4,1)
+        plt.axis('off')
+        plt.title(u"二值化", fontproperties=zhfont)
+        plt.imshow(binary, cmap=plt.cm.bone)
+    '''
+    Step 2: 移除与边界相连的部分
+    '''
+    cleared = clear_border(binary)
+    if plot == True:
+        plt.subplot(2, 4, 2)
+        plt.axis('off')
+        plt.title(u"移除边界", fontproperties=zhfont)
+        plt.imshow(cleared, cmap=plt.cm.bone)
+    '''
+    Step 3: 标记连通区域
+    '''
+    label_image = label(cleared)
+    if plot == True:
+        plt.subplot(2, 4, 3)
+        plt.axis('off')
+        plt.title(u"标记联通区域", fontproperties=zhfont)
+        plt.imshow(label_image, cmap=plt.cm.bone)
+    '''
+    Step 4: 只保留两个最大的连通区域
+    '''
+    areas = [r.area for r in regionprops(label_image)]
+    areas.sort()
+    if len(areas) > 2:
+        for region in regionprops(label_image):
+            if region.area < areas[-2]:
+                for coordinates in region.coords:
+                    label_image[coordinates[0], coordinates[1]] = 0
+    binary = label_image > 0
+    if plot == True:
+        plt.subplot(2, 4, 4)
+        plt.axis('off')
+        plt.title(u"保留最大的两个区域", fontproperties=zhfont)
+        plt.imshow(binary, cmap=plt.cm.bone)
+    '''
+    Step 5: 半径为2的腐蚀操作,分离附着于血管的肺结节
+    '''
+    selem = disk(2)
+    binary = binary_erosion(binary, selem)
+    if plot == True:
+        plt.subplot(2, 4, 5)
+        plt.axis('off')
+        plt.title(u"腐蚀", fontproperties=zhfont)
+        plt.imshow(binary, cmap=plt.cm.bone)
+    '''
+    Step 6: 半径为10的闭操作,合并粘在肺壁上的结节
+    '''
+    selem = disk(10)
+    binary = binary_closing(binary, selem)
+    if plot == True:
+        plt.subplot(2, 4, 6)
+        plt.axis('off')
+        plt.title(u"闭", fontproperties=zhfont)
+        plt.imshow(binary, cmap=plt.cm.bone)
+    '''
+    Step 7: 填充小洞
+    '''
+    edges = roberts(binary)#边缘检测,Roberts算子,也可以使用sobel算子
+    binary = ndi.binary_fill_holes(edges)#空洞填充
+    if plot == True:
+        plt.subplot(2, 4, 7)
+        plt.axis('off')
+        plt.title(u"填充小洞", fontproperties=zhfont)
+        plt.imshow(binary, cmap=plt.cm.bone)
+
+    "此时binnary就是最终的掩码了"
+    # '''
+    # 7.1 非肺部区域绿色,肺部区域蓝色
+    # '''
+    # # 拷贝一个binnary
+    # ColorMask = np.zeros((binary.shape[0],binary.shape[1],3), np.uint8)
+    #
+    # for i in range(ColorMask.shape[0]):
+    #     for j in range(ColorMask.shape[1]):
+    #         if binary[i,j] == 0:
+    #             ColorMask[i,j]=(0,255,0)
+    #         if binary[i,j] == 1:
+    #             ColorMask[i, j] = (0, 0, 255)
+    #
+    # if plot == True:
+    #     plt.subplot(3, 4, 9)
+    #     plt.axis('off')
+    #     plt.title(u"上色", fontproperties=zhfont)
+    #     plt.imshow(ColorMask)
+    #
+    # '''
+    # 7.2 ROI描点,连接成封闭区域,填充
+    # '''
+    # if len(rois)>=1:
+    #     for roi in rois:
+    #         cv2.fillPoly(ColorMask, [roi], (255, 0, 0))
+    #
+    # # cv2.polylines(ColorMask, [pts], True, (255, 0, 0), 2)
+    # # cv2.fillPoly(ColorMask, [pts], (255, 0, 0))
+    # if plot == True:
+    #     plt.subplot(3, 4, 10)
+    #     plt.axis('off')
+    #     plt.title(u"ROI勾画", fontproperties=zhfont)
+    #     plt.imshow(ColorMask)
+    '''
+    Step 8: 使用掩码提取原始图像中的肺区域
+    '''
+    get_high_vals = binary == 0
+    img[get_high_vals] = 0
+    if plot == True:
+        plt.subplot(2, 4, 8)
+        plt.axis('off')
+        plt.title(u"使用掩码提取原始数据", fontproperties=zhfont)
+        plt.imshow(img, cmap=plt.cm.bone)
+
+    return img
 
 
 if __name__=='__main__':

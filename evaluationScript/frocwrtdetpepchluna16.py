@@ -8,13 +8,13 @@ import csv
 from multiprocessing import Pool
 import functools
 import SimpleITK as sitk
-fold = 9
-annotations_filename = # path for ground truth annotations for the fold
-annotations_excluded_filename = # path for excluded annotations for the fold
-seriesuids_filename = # path for seriesuid for the fold
-results_path = #val' #val' ft96'+'/val'#
-sideinfopath = '/media/data1/wentao/tianchi/luna16/preprocess/lunaall/'#subset'+str(fold)+'/'  +str(fold)
-datapath = '/media/data1/wentao/tianchi/luna16/lunaall/'#subset'+str(fold)+'/'
+fold = 5
+annotations_filename = './annotations/annotations.csv'# path for ground truth annotations for the fold
+annotations_excluded_filename = './annotations/annotations_excluded.csv'# path for excluded annotations for the fold
+seriesuids_filename = './annotations/seriesuids.csv'# path for seriesuid for the fold
+results_path = "./result/"#val' #val' ft96'+'/val'#
+sideinfopath = '/home/RAID1/DataSet/LUNA16/preprocess/all/'#subset'+str(fold)+'/'  +str(fold)
+datapath = '/home/RAID1/DataSet/LUNA16/all/'#subset'+str(fold)+'/'
 
 maxeps = 150 #03 #150 #100#100
 eps = range(1, maxeps+1, 1)#6,7,1)#5,151,5)#5,151,5)#76,77,1)#40,41,1)#76,77,1)#1,101,1)#17,18,1)#38,39,1)#1, maxeps+1, 1) #maxeps+1, 1)
@@ -114,11 +114,13 @@ def convertcsv(bboxfname, bboxpath, detp):
     # print len(rowlist), len(rowlist[0])
     return rowlist#bboxfname[:-8], pos[:K, 2], pos[:K, 1], pos[:K, 0], 1/(1+np.exp(-pbb[:K,0]))
 def getfrocvalue(results_filename):
-    return noduleCADEvaluation(annotations_filename,annotations_excluded_filename,seriesuids_filename,results_filename,'./', vis=isvis)#vis=False)
+    return noduleCADEvaluation(annotations_filename,annotations_excluded_filename,seriesuids_filename,results_filename,'./')#vis=False)
 p = Pool(nprocess)
 def getcsv(detp, eps):
     for ep in eps:
     	bboxpath = results_path + str(ep) + '/'
+        if not os.path.exists(bboxpath):
+            os.makedirs(bboxpath)
         for detpthresh in detp:
             print 'ep', ep, 'detp', detpthresh
             f = open(bboxpath + 'predanno'+ str(detpthresh) + 'd3.csv', 'w')
@@ -141,7 +143,7 @@ def getcsv(detp, eps):
                     # print row
                     fwriter.writerow(row)
             f.close()
-# getcsv(detp, eps)
+getcsv(detp, eps)
 def getfroc(detp, eps):
     maxfroc = 0
     maxep = 0
@@ -149,7 +151,7 @@ def getfroc(detp, eps):
     	bboxpath = results_path + str(ep) + '/'
         predannofnamalist = []
         for detpthresh in detp:
-            predannofnamalist.append(bboxpath + 'predanno'+ str(detpthresh) + '.csv')
+            predannofnamalist.append(bboxpath + 'predanno'+ str(detpthresh) + 'd3.csv')
         froclist = p.map(getfrocvalue, predannofnamalist)
         if maxfroc < max(froclist):
             maxep = ep

@@ -367,5 +367,6 @@ def singletest(data,net,config,splitfun,combinefun,n_per_run,margin = 64,isfeat=
         return output,feature
     else:
         return output
+
 if __name__ == '__main__':
     main()
