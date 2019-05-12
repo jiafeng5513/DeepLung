@@ -8,7 +8,7 @@ import csv
 from multiprocessing import Pool
 import functools
 import SimpleITK as sitk
-fold = 5
+fold = 9
 annotations_filename = './annotations/annotations.csv'# path for ground truth annotations for the fold
 annotations_excluded_filename = './annotations/annotations_excluded.csv'# path for excluded annotations for the fold
 seriesuids_filename = './annotations/seriesuids.csv'# path for seriesuid for the fold
@@ -21,7 +21,7 @@ eps = range(1, maxeps+1, 1)#6,7,1)#5,151,5)#5,151,5)#76,77,1)#40,41,1)#76,77,1)#
 detp = [-1.5, -1]#, -0.5, 0]#, 0.5, 1]#, 0.5, 1] #range(-1, 0, 1)
 isvis = False #True
 nmsthresh = 0.1
-nprocess = 38#4
+nprocess = 1#4
 use_softnms = False
 frocarr = np.zeros((maxeps, len(detp)))
 firstline = ['seriesuid', 'coordX', 'coordY', 'coordZ', 'probability']
