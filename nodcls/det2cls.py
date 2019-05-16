@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import os
 import os.path
-
+from tqdm import tqdm
 
 
 
@@ -212,7 +212,7 @@ import transforms as transforms
 import os
 import argparse
 from models import *
-from utils import progress_bar
+
 from torch.autograd import Variable
 import numpy as np
 criterion = nn.CrossEntropyLoss()
@@ -397,6 +397,7 @@ def train(epoch):
     trainfeat = np.zeros((len(trfnamelst), 2560+CROPSIZE*CROPSIZE*CROPSIZE+1))
     trainlabel = np.zeros((len(trfnamelst),))
     idx = 0
+    pbar = tqdm(total=len(trainloader), unit="batchs")
     for batch_idx, (inputs, targets, feat) in enumerate(trainloader):
         if use_cuda:
             # print(len(inputs), len(targets), len(feat), type(inputs[0]), type(targets[0]), type(feat[0]))
@@ -425,7 +426,10 @@ def train(epoch):
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
         correct += predicted.eq(targets.data).cpu().sum()
-        progress_bar(batch_idx, len(trainloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+        # progress_bar(batch_idx, len(trainloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+        #     % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
+        pbar.update(1)
+        pbar.set_description('Loss: %.3f | Acc: %.3f%% (%d/%d)'
             % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
     m = gbt(max_depth=gbtdepth, random_state=0)
     m.fit(trainfeat, trainlabel)
@@ -445,6 +449,7 @@ def test(epoch, m):
     testlabel = np.zeros((len(tefnamelst),))
     dpnpred = np.zeros((len(tefnamelst),))
     idx = 0
+    pbar = tqdm(total=len(testloader), unit="batchs")
     for batch_idx, (inputs, targets, feat) in enumerate(testloader):
         if use_cuda:
             inputs, targets = inputs.cuda(), targets.cuda()
@@ -457,8 +462,11 @@ def test(epoch, m):
         _, predicted = torch.max(outputs.data, 1)
         total += targets.size(0)
         correct += predicted.eq(targets.data).cpu().sum()
-        progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
-            % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
+        pbar.update(1)
+        pbar.set_description('Loss: %.3f | Acc: %.3f%% (%d/%d)' %
+                             (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
+        # progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+        #     % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
         for i in xrange(len(targets)):
             testfeat[idx+i, 2560:] = np.array((Variable(feat[i]).data).cpu().numpy())
             testlabel[idx+i] = np.array((targets[i].data).cpu().numpy())

@@ -1,16 +1,17 @@
-preprocesspath = '/home/RAID1/DataSet/LUNA16/preprocess/all'
-savepath = '/home/RAID1/DataSet/LUNA16/crop_v3/'
+
 
 import os
 import os.path
 import numpy as np
 import pandas as pd
-newlst = []
-CROPSIZE = 32#24#30#36
-print CROPSIZE
+import csv
 
 newlst = []
-import csv
+CROPSIZE = 32#24#30#36
+preprocesspath = '/home/RAID1/DataSet/LUNA16/preprocess/all'
+savepath = '/home/RAID1/DataSet/LUNA16/crop_v3/'
+newlst = []
+
 
 pdframe = pd.read_csv('./data/annotationdetclsconvfnl_v3.csv', names=['seriesuid', 'coordX', 'coordY', 'coordZ', 'diameter_mm', 'malignant'])
 srslst = pdframe['seriesuid'].tolist()[1:]

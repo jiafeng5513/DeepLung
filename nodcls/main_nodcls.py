@@ -19,7 +19,7 @@ from dataloader import lunanod
 
 CROPSIZE = 32
 gbtdepth = 1
-fold = 5    #subset id
+fold = 9    #subset id
 blklst = []#['1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-388', \
            # '1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-389', \
            # '1.3.6.1.4.1.14519.5.2.1.6279.6001.132817748896065918417924920957-660']
@@ -27,9 +27,9 @@ blklst = []#['1.3.6.1.4.1.14519.5.2.1.6279.6001.121993590721161347818774929286-3
 preprocesspath = '/home/RAID1/DataSet/LUNA16/crop_v3/'
 csvfilepath = './data/annotationdetclsconvfnl_v3.csv'
 luna16path = '/home/RAID1/DataSet/LUNA16/'
-savemodelpath = './checkpoint-'+str(fold)+'/'
+savemodelpath = './results/checkpoint-'+str(fold)+'/'
 
-logging.basicConfig(filename='log-'+str(fold), level=logging.INFO)
+logging.basicConfig(filename='./results/log-'+str(fold), level=logging.INFO)
 parser = argparse.ArgumentParser(description='nodcls')
 parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
 parser.add_argument('--resume', '-r', action='store_true', help='resume from checkpoint')
@@ -243,7 +243,7 @@ class nodcls():
 
         gbtteacc = np.mean(m.predict(testfeat) == testlabel)
         if gbtteacc > self.best_acc_gbt:
-            pickle.dump(m, open('gbtmodel-' + str(fold) + '.sav', 'wb'))
+            pickle.dump(m, open('./results/gbtmodel-' + str(fold) + '.sav', 'wb'))
             logging.info('Saving gbt ..')
             state = {
                 'net': self.net.module if self.use_cuda else self.net,
@@ -293,16 +293,4 @@ class nodcls():
 
 if __name__ == '__main__':
     classifier = nodcls()
-    classifier.TrainAndTest(start_epoch=0,max_epoch=100 * 2)
-
-
-
-
-
-
-
-
-
-
-
-
+    classifier.TrainAndTest(start_epoch=0,max_epoch=350 * 2)

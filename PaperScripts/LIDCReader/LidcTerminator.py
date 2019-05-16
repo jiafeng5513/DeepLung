@@ -19,7 +19,7 @@ import cv2 as cv
 import numpy as np
 import pydicom
 from PIL import Image
-from progressbar import *
+#from progressbar import *
 from Model.XmlData import XmlLabelForCT, XmlLabelSlim
 from utils.MaskGenerator import GenerateLabel
 

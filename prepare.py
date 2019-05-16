@@ -1,24 +1,21 @@
 #coding:utf-8
 import os
-from config_training import config
-import numpy as np
-from scipy.ndimage.interpolation import zoom
-import SimpleITK as sitk
-from scipy.ndimage.morphology import binary_dilation, generate_binary_structure
-from skimage.morphology import convex_hull_image
 import pandas
-from multiprocessing import Pool
-from functools import partial
-import cv2
+import numpy as np
+import SimpleITK as sitk
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import numpy as np
 import pydicom
 import pydicom as dicom
+from config_training import config
 from scipy import ndimage as ndi
+from scipy.ndimage.interpolation import zoom
+from scipy.ndimage.morphology import binary_dilation, generate_binary_structure
+from multiprocessing import Pool
+from functools import partial
 from skimage.filters import roberts
 from skimage.measure import label, regionprops
-from skimage.morphology import disk, binary_erosion, binary_closing
+from skimage.morphology import disk, binary_erosion, binary_closing,convex_hull_image
 from skimage.segmentation import clear_border
 
 zhfont = mpl.font_manager.FontProperties(fname='/usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf')
@@ -364,4 +361,11 @@ def TestPreprocess(img,plot=False):
 
 
 if __name__=='__main__':
-    preprocess_luna()
+    ## do preprocess
+    #preprocess_luna()
+    ## do Test
+    url = "./DeepLungDetectionDemo/DCM/000080.dcm"
+    pix = dicom.read_file(url).pixel_array
+    print(pydicom.read_file(url).SOPInstanceUID)
+    TestPreprocess(pix,True)
+    plt.show()

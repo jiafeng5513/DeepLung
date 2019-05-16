@@ -104,3 +104,8 @@ ENV/
 .idea/inspectionProfiles/
 .idea/workspace.xml
 *.t7
+/evaluationScript/result
+/evaluationScript/results
+/nodcls/results/
+将删除 nodcls/results/gbtmodel-9.sav
+将删除 nodcls/results/log-9

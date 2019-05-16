@@ -3,7 +3,7 @@ from __future__ import print_function
 from PIL import Image
 import os
 import os.path
-import errno
+import math
 import numpy as np
 import sys
 if sys.version_info[0] == 2:
@@ -12,9 +12,37 @@ else:
     import pickle
 import torch
 import torch.utils.data as data
-from torch.autograd import Variable
-from torch.nn.functional.interpolate import nn
+import torch.nn.functional as F
 
+# SPP(空间金字塔池化)
+class SPP(torch.nn.Module):
+
+    def __init__(self, num_levels, pool_type='max_pool'):
+        super(SPP, self).__init__()
+
+        self.num_levels = num_levels
+        self.pool_type = pool_type
+
+    def forward(self, x):
+        num, c, h, w = x.size() # num:样本数量 c:通道数 h:高 w:宽
+        for i in range(self.num_levels):
+            level = i+1
+            kernel_size = (math.ceil(h / level), math.ceil(w / level))
+            stride = (math.ceil(h / level), math.ceil(w / level))
+            padding = (math.floor((kernel_size[0]*level-h+1)/2), math.floor((kernel_size[1]*level-w+1)/2))
+
+            # 选择池化方式
+            if self.pool_type == 'max_pool':
+                tensor = F.max_pool2d(x, kernel_size=kernel_size, stride=stride, padding=padding).view(num, -1)
+            else:
+                tensor = F.avg_pool2d(x, kernel_size=kernel_size, stride=stride, padding=padding).view(num, -1)
+
+            # 展开
+            if (i == 0):
+                x_flatten = tensor.view(num, -1)
+            else:
+                x_flatten = torch.cat((x_flatten, tensor.view(num, -1)), 1)
+        return x_flatten
 """
 带语义信息的多尺度输入
 1. 按照d计算裁剪尺寸
@@ -27,7 +55,7 @@ class lunanod(data.Dataset):
         self.transform = transform
         self.target_transform = target_transform
         self.train = train  # training set or test set
-        SPP = SPP(4,pool_type='max_pool')
+        _SPP = SPP(4,pool_type='max_pool')
         # now load the picked numpy arrays
         if self.train:
             self.train_data = []
@@ -39,10 +67,10 @@ class lunanod(data.Dataset):
                     print("Mask shape error!want (24,24,24),but give(%d,%d,%d)" % (mask.shape[0],mask.shape[1],mask.shape[2]))
                 else:
                     #上采样到(96,96,96)
-                    mask96 = upsample(mask)
+                    mask96 = self.upsample(mask)
                     # 掩码处理
                     fentry_clean = fentry.mul(mask96)
-                    out30 = SPP.forward(fentry_clean)
+                    out30 = _SPP.forward(fentry_clean)
                 if type(fentry) != 'str':
                     self.train_data.append(out30)
                     self.train_labels.append(label)
@@ -118,36 +146,7 @@ class lunanod(data.Dataset):
             return self.test_len
 
     def upsample(self,mask24):
-        m = nn.Upsample(scale_factor=4, mode='nearest')
+        m = torch.nn.Upsample(scale_factor=4, mode='nearest')
         return m(mask24)
 
 
-# SPP(空间金字塔池化)
-class SPP(torch.nn.Module):
-
-    def __init__(self, num_levels, pool_type='max_pool'):
-        super(SPPLayer, self).__init__()
-
-        self.num_levels = num_levels
-        self.pool_type = pool_type
-
-    def forward(self, x):
-        num, c, h, w = x.size() # num:样本数量 c:通道数 h:高 w:宽
-        for i in range(self.num_levels):
-            level = i+1
-            kernel_size = (math.ceil(h / level), math.ceil(w / level))
-            stride = (math.ceil(h / level), math.ceil(w / level))
-            padding = (math.floor((kernel_size[0]*level-h+1)/2), math.floor((kernel_size[1]*level-w+1)/2))
-
-            # 选择池化方式
-            if self.pool_type == 'max_pool':
-                tensor = F.max_pool2d(x, kernel_size=kernel_size, stride=stride, padding=padding).view(num, -1)
-            else:
-                tensor = F.avg_pool2d(x, kernel_size=kernel_size, stride=stride, padding=padding).view(num, -1)
-
-            # 展开
-            if (i == 0):
-                x_flatten = tensor.view(num, -1)
-            else:
-                x_flatten = torch.cat((x_flatten, tensor.view(num, -1)), 1)
-        return x_flatten
