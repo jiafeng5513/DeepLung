@@ -194,4 +194,4 @@ def plotlog(logfile, savepath):
 
 
 if __name__ == '__main__':
-    plotlog('log', savepath='./')
+    plotlog('./results/dpn3d26/training_config_9/log', savepath='./results/')
