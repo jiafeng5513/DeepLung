@@ -13,6 +13,7 @@ else:
 import torch
 import torch.utils.data as data
 import torch.nn.functional as F
+import math
 
 # SPP(空间金字塔池化)
 class SPP(torch.nn.Module):
@@ -63,50 +64,51 @@ class lunanod(data.Dataset):
             self.train_feat = featlst
             for label, fentry in zip(labellst, fnamelst):
                 D = label[3] if label[3]%2==0 else label[3]+1 #计算裁剪尺寸
-                if mask.shape[0]!=24 or mask.shape[1]!=24 or mask.shape[1]!=24:
-                    print("Mask shape error!want (24,24,24),but give(%d,%d,%d)" % (mask.shape[0],mask.shape[1],mask.shape[2]))
-                else:
-                    #上采样到(96,96,96)
-                    mask96 = self.upsample(mask)
-                    # 掩码处理
-                    fentry_clean = fentry.mul(mask96)
-                    out30 = _SPP.forward(fentry_clean)
+                # 生成Mask
+                mask96 = self.mask_generate(label, D)
+                # 裁剪
+                fentry = fentry.reshape(1, D, D, D)
+                # 掩码处理
+                fentry_clean = fentry.mul(mask96)
+                out30 = _SPP.forward(fentry_clean)
                 if type(fentry) != 'str':
-                    self.train_data.append(out30)
-                    self.train_labels.append(label)
+                    self.train_data.append(fentry)
+                    self.train_len.append(label)
                     # print('1')
                 else:
-                    file = os.path.join(npypath, out30)
+                    file = os.path.join(npypath, fentry)
                     self.train_data.append(np.load(file))
-                    self.train_labels.append(label)
-
+                    self.train_len.append(label)
             self.train_data = np.concatenate(self.train_data)
-            self.train_data = self.train_data.reshape((len(fnamelst), 32, 32, 32))
-            # self.train_labels = np.asarray(self.train_labels)
-            # self.train_data = self.train_data.transpose((0, 2, 3, 4, 1))  # convert to HWZC
             self.train_len = len(fnamelst)
         else:
             self.test_data = []
             self.test_labels = []
             self.test_feat = featlst
             for label, fentry in zip(labellst, fnamelst):
-                if fentry.shape[0] != 32 or fentry.shape[1] != 32 or fentry.shape[2] != 32:
-                    print(fentry.shape, type(fentry), type(fentry)!='str')
+                D = label[3] if label[3] % 2 == 0 else label[3] + 1  # 计算裁剪尺寸
+
+                if mask.shape[0]!=24 or mask.shape[1]!=24 or mask.shape[1]!=24:
+                    print("Mask shape error!want (24,24,24),but give(%d,%d,%d)" % (mask.shape[0],mask.shape[1],mask.shape[2]))
+                else:
+                    #上采样到(96,96,96)
+                    mask96 = self.upsample(mask)
+                    # 裁剪
+                    fentry=fentry.reshape(1, D, D, D)
+                    # 掩码处理
+                    fentry_clean = fentry.mul(mask96)
+                    out30 = _SPP.forward(fentry_clean)
                 if type(fentry) != 'str':
-                    self.test_data.append(fentry)
+                    self.test_data.append(out30)
                     self.test_labels.append(label)
                     # print('1')
                 else:
-                    file = os.path.join(npypath, fentry)
+                    file = os.path.join(npypath, out30)
                     self.test_data.append(np.load(file))
                     self.test_labels.append(label)
             self.test_data = np.concatenate(self.test_data)
-            # print(self.test_data.shape)
-            self.test_data = self.test_data.reshape((len(fnamelst), 32, 32, 32))
-            # self.test_labels = np.asarray(self.test_labels)
-            # self.test_data = self.test_data.transpose((0, 2, 3, 4, 1))  # convert to HWZC
             self.test_len = len(fnamelst)
-            print(self.test_data.shape, len(self.test_labels), len(self.test_feat))
+
 
     def __getitem__(self, index):
         """
@@ -149,4 +151,18 @@ class lunanod(data.Dataset):
         m = torch.nn.Upsample(scale_factor=4, mode='nearest')
         return m(mask24)
 
+    def mask_generate(self,label,D):
+        #先初始化一个D*D*D的区域
+        mask = np.zeros((D,D,D))
+        # 按照球形空间进行掩码构造
+        x=label[0]
+        y=label[1]
+        z=label[2]
+
+        for i in range(D):
+            for j in range(D):
+                for k in range (D):
+                    if math.sqrt((i-x)*(i-x)+(j-y)*(j-y)+(k-z)*(k-z))<=D:
+                        mask[i][j][k]=1
+        return mask
 
