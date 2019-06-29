@@ -8,7 +8,8 @@
 6. 训练分类器.分类器在nodcls中,通过运行`./run_training_classifier.sh`开始训练
 7. 
 #### Note
-Forked From [wentaozhu/DeepLung](https://github.com/wentaozhu/DeepLung) and edited by [jiafeng5513](https://github.com/jiafeng5513).
+1. Forked From [wentaozhu/DeepLung](https://github.com/wentaozhu/DeepLung) and edited by [jiafeng5513](https://github.com/jiafeng5513).<br>
+2. [deeplung 代码讲解](https://blog.csdn.net/qq_36401512/article/details/87939862).<br>
 
 #### Citation:
 Zhu, Wentao, Chaochun Liu, Wei Fan, and Xiaohui Xie. "DeepLung: Deep 3D Dual Path Nets for Automated Pulmonary Nodule Detection and Classification." IEEE WACV, 2018.
