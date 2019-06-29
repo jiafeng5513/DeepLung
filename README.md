@@ -10,6 +10,12 @@
 #### Note
 1. Forked From [wentaozhu/DeepLung](https://github.com/wentaozhu/DeepLung) and edited by [jiafeng5513](https://github.com/jiafeng5513).<br>
 2. [deeplung 代码讲解](https://blog.csdn.net/qq_36401512/article/details/87939862).<br>
+3. [LIDC-IDRI肺结节公开数据集Dicom和XML标注详解](https://www.jianshu.com/p/c4e9e18195eb).<br>
+4. [常见医疗扫描图像处理步骤](https://blog.csdn.net/u013635029/article/details/72957944?locationNum=2&fps=1).<br>
+5. [这篇经验说不定会帮你夺冠医疗AI大赛哦](https://blog.csdn.net/c2a2o2/article/details/77466692).<br>
+6. [全卷积神经网络图像分割(U-net)-keras实现](https://blog.csdn.net/u012931582/article/details/70215756).<br>
+7. [Faster R-CNN论文及源码解读](https://senitco.github.io/2017/09/02/faster-rcnn/).<br>
+8. [DICOMLibrary](https://www.dicomlibrary.com/).<br>
 
 #### Citation:
 Zhu, Wentao, Chaochun Liu, Wei Fan, and Xiaohui Xie. "DeepLung: Deep 3D Dual Path Nets for Automated Pulmonary Nodule Detection and Classification." IEEE WACV, 2018.
